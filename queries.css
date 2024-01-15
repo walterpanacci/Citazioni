@@ -1,0 +1,10 @@
+@media (max-width: 29em) {
+  .overlay {
+    opacity: 0;
+  }
+
+  .fav-quotes {
+    padding: 2rem;
+    width: 105%;
+  }
+}

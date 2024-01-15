@@ -1,0 +1,182 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #c8b6ff;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  padding: 5rem 5rem;
+}
+
+.favs-button {
+  background-color: #3d348b;
+  height: 3.4rem;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  color: #ffd6ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.quote {
+  background-color: #ffd6ff;
+  transform: skew(5deg);
+  padding: 3rem 8rem;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  position: relative;
+}
+
+.quote-content {
+  padding: 3rem;
+}
+
+.quote-author {
+  padding: 0 3rem;
+}
+
+.quote-content {
+  transform: skew(-5deg);
+}
+
+.get-quote {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  background-color: #b8c0ff;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.add,
+.remove {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  fill: #3d348b;
+  cursor: pointer;
+}
+
+.add-message {
+  position: absolute;
+  top: -2%;
+  right: -5%;
+  opacity: 0;
+  background-color: #ffd6ff4f;
+  transition: all 0.4s;
+}
+
+.remove-message {
+  position: absolute;
+  top: -2%;
+  right: -5%;
+  opacity: 0;
+  background-color: #ffd6ff4f;
+  transition: all 0.4s;
+}
+
+.image-content {
+  width: 50rem;
+  margin: 4rem auto;
+}
+
+.quote-image {
+  transform: skew(-3deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.fav-quotes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.fav-icon {
+  fill: #3d348b;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.no-favs,
+.favs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #3d348b;
+  font-size: 3rem;
+  overflow: auto;
+}
+
+.favs {
+  height: 30rem;
+  overflow: auto;
+  gap: 2rem;
+  align-items: start;
+}
+
+.favs {
+  font-size: 1.5rem;
+}
+
+.fav-author {
+  font-weight: 600;
+}
+
+.close-modal-no-favs,
+.close-modal-favs {
+  position: absolute;
+  fill: #3d348b;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
