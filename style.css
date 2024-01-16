@@ -179,4 +179,124 @@ body {
   cursor: pointer;
   border: none;
   background: none;
+  transition: all 0.4s;
+  border-radius: 10px;
+}
+
+.close-modal-no-favs:hover,
+.close-modal-favs:hover {
+  fill: white;
+  background-color: #3d348b;
+}
+
+.about {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  background-color: #333;
+  height: 50%;
+  z-index: 999;
+  width: 20%;
+  color: #b8c0ff;
+  padding: 4rem;
+  font-size: 2rem;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+
+.about a {
+  text-decoration: none;
+  color: #b8c0ff;
+}
+
+.close-about {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  fill: #b8c0ff;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.menu {
+  fill: #3d348b;
+  cursor: pointer;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #3d348b;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.image-container {
+  position: relative;
+}
+
+.dots {
+  font-size: 4rem;
+  color: #3d348b;
+}
+
+.book-open-icon,
+.book-close-icon {
+  fill: #3d348b;
+}
+
+.fav-quote {
+  position: relative;
+}
+
+.remove-fav-quote {
+  position: absolute;
+  bottom: 1%;
+  right: 3%;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.remove-fav-quote-icon {
+  height: 22px;
+  margin: 2px;
+  fill: #3d348b;
+}
+
+.remove-fav-quote-icon:hover {
+  fill: white;
+  height: 22px;
+}
+
+.remove-fav-quote:hover {
+  background-color: #3d348b;
+}
+
+.favs .no-favs {
+  width: auto;
+  margin: 0 auto;
+}
+
+.get-all {
+  margin-left: auto;
+  cursor: pointer;
+  opacity: 0;
 }
